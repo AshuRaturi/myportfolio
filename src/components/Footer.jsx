@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
+import { FaPhone } from "react-icons/fa";
 
 const Footer = () => {
   const handleScroll = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -13,7 +14,10 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto text-center border-t-2 pt-6">
         {/* Brand Name */}
         <h2 className="text-2xl md:text-3xl font-bold tracking-wider text-purple-500 mb-4">
-          Ashutosh Raturi
+          Ashutosh Raturi <FaPhone size={16} className="inline mr-1" />{" "}
+          <a href="tel:7060051875" className="hover:underline">
+            7060051875
+          </a>
         </h2>
 
         {/* Navigation Links */}
