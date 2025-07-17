@@ -180,7 +180,7 @@ export const SkillsInfo = [
       image: zaptro,
       tags: ["React JS", "API", "useContext", "CSS", "Javascript", "Tailwind"],
       github: "https://github.com/codingmastr/Webverse-Digital",
-      webapp: "https://vkhm4cf5-5173.inc1.devtunnels.ms/",
+      webapp: "https://zaptro-ecommerce-react.vercel.app/",
     },
     {
       id: 2,
