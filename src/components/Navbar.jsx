@@ -90,7 +90,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="https://github.com/ashuraturi"
+            href="https://www.linkedin.com/in/ashutosh-raturi-507843255/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
