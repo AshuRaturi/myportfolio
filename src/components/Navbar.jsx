@@ -28,8 +28,8 @@ const Navbar = () => {
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
-    { id: "project", label: "work" },
-    { id: "education", label: "Education" },
+    { id: "work", label: "Work" },
+    { id: "education", label: "Academic" },
     { id: "contact", label: "7060051875" },
   ];
 
@@ -41,7 +41,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="text-white py-5 flex justify-between items-center">
+      <div className="flex items-center justify-between py-5 text-white">
         <div className="text-lg font-semibold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>
           <span className="text-white">Ashutosh</span>
@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu  */}
-        <ul className="hidden md:flex space-x-8 text-grey-300">
+        <ul className="hidden space-x-8 md:flex text-grey-300">
           {menuItems.map((item) =>
             item.id === "contact" ? (
               <li
@@ -59,7 +59,7 @@ const Navbar = () => {
                 className="font-semibold text-[#8245ec] hover:text-white"
               >
                 <FaPhone size={16} className="inline mr-1" />{" "}
-                <a href="tel:7060051875" className="hover:underline mr-3">
+                <a href="tel:7060051875" className="mr-3 hover:underline">
                   {item.label}
                 </a>
               </li>
@@ -79,7 +79,7 @@ const Navbar = () => {
         </ul>
 
         {/* Social-Media-Icons  */}
-        <div className="hidden md:flex  space-x-4">
+        <div className="hidden space-x-4 md:flex">
           <a
             href="https://github.com/ashuraturi"
             target="_blank"
@@ -122,7 +122,7 @@ const Navbar = () => {
       {/* Mobile Menu Items  */}
       {isOpen && (
         <div className="absolute top-20 left-10 transform -transform-x-1/2  w-[300px] bg-[#050414] bg-opacity-50 backdrop-blur-lg z-50 rounded-lg shadow-lg">
-          <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
+          <ul className="flex flex-col items-center py-4 space-y-4 text-gray-300">
             {menuItems.map((item) =>
               item.id === "contact" ? (
                 <li
@@ -130,7 +130,7 @@ const Navbar = () => {
                   className="font-semibold text-[#8245ec] hover:text-white "
                 >
                   <FaPhone size={16} className="inline mr-1" />{" "}
-                  <a href="tel:7060051875" className="hover:underline mr-3">
+                  <a href="tel:7060051875" className="mr-3 hover:underline">
                     {item.label}
                   </a>
                 </li>
@@ -147,7 +147,7 @@ const Navbar = () => {
                 </li>
               )
             )}
-            <div className="flex  space-x-4">
+            <div className="flex space-x-4">
               <a
                 href="https://github.com/AshuRaturi"
                 target="_blank"
